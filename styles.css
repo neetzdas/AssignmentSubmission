@@ -1,55 +1,56 @@
 *{
-	padding: 0;
-	margin: 0;
+	padding: 0; /*doesnot give any space*/
+	margin: 0; /*doesnot give any margin*/
 }
 
 .web {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('astro.jpg');/*https://www.pexels.com/search/beauty/13thapril*/
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 100%;
-	width: 100%;
+	background-size: cover; /*covers the entire container*/
+	background-repeat: no-repeat; /*doesnot repeat the background image.*/
+	height: 100%; /*gives the height of the background image*/
+	width: 100%; /*gives the width of the background image*/
 }
 
 .menu{
-	background-color: rgba(0,0,0,0.5);
-	font-family: "Roboto", cursive;
+	background-color: rgba(0,0,0,0.5);/*gives the opacity*/
+	font-family: "Roboto", cursive;/*gives the font-family*/
 }
 
 body .menu header ul.nav{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	display: flex;/* defines the flexible items be the same length*/
+	flex-direction: row; /*defines in the row */
+	justify-content: space-around; /*justifies the content*/
 }
 
 body .menu header ul.nav li{
-	list-style: none;
-	margin: 20px;
+	list-style: none;/*doesnot give any list-style.*/
+	margin: 20px;/* gives the margin*/
 }
 
 body .menu header ul.nav a{
-	text-decoration: none;
-	color: white;
-	font-size: 20px;
+	text-decoration: none;  /* does not give any text-decoration*/
+	color: white;/* gives the font color*/
+	font-size: 20px;/* gives the font-size*/
 
 }
 
 body .menu header ul.nav li h2.logo{
-	color: white;
-	border: 1.5px solid white;
-	border-radius: 55px 30px;
+	color: white;/* gives the font color*/
+	border: 1.5px solid white; /* gives the border*/
+	border-radius: 55px 30px; /* gives the border-radius*/
 }
 
 body .menu header ul.nav li h2:hover{	 
-    transform: rotate(360deg);
-    transition-duration: 5s;
+    transform: rotate(360deg);/* logo rotates 360 when hovered*/
+    transition-duration: 5s;/* is the duration of the transition*/
 }
 
 body .menu header ul.nav li a:hover {
-	transition: 0.5s;
+	transition: 0.5s; /* is the duration of the transition*/
 	border: 2px solid white;
 	border-radius: 25px; 
-	background-color: gray;
+	background-color: gray; /* gives the background color*/
+
 }
 
 section .text{
@@ -181,47 +182,47 @@ section .personal fieldset{
 /*Social*/
 
 section .socials{
-	background-color: rgba(0,0,0,0.5);
-	height: 400px;
-	margin: 50px;
+	background-color: rgba(0,0,0,0.5); /* gives the opacity*/
+	height: 400px; /* gives the height*/
+	margin: 50px; /* gives the weight*/
 }
 
 section .socials h2{
-	text-align: center; 
-	color: white;
-	font-family: "Lobster", cursive;
-	padding-top: 20px;
+	text-align: center; /* the text is aligned to center*/ 
+	color: white; /* gives the color*/
+	font-family: "Lobster", cursive;/* gives the font-family*/
+	padding-top: 20px;/* gives the padding top*/
 }
 
 ul.media{
-	list-style: none;
+	list-style: none;/*does not give any liststyle*/
 }
 
 ul.media li{
-	display: inline-block;
+	display: inline-block;/* the media is displayed inline-block*/
 	margin: 48px;
 	margin-top: 100px;
 }
 
 ul.media a{
-	display: inline-block;
-	width:145px;
-	height: 145px;
-	text-align: center;
-	line-height: 145px;
+	display: inline-block;/* the media is displayed inline-block*/
+	width:145px; /* gives the width*/
+	height: 145px; /* gives the height*/
+	text-align: center; /* the text is aligned to center*/
+	line-height: 145px;/* gives the line-height*/
 	position: relative;
 	transition: 0.5s;
 	background-color: white;
-	transform-style:preserve-3d;
-	border:1px solid black; 
-	border-radius: 50%;
+	transform-style:preserve-3d;/* transformed in 3D direction*/
+	border:1px solid black; /* gives the border*/
+	border-radius: 50%;/* gives the border-radius*/
 }
 
 ul.media .front, ul.media .back{
 	width: 145px;
 	height: 145px;
 	position: absolute;
-	transform: translateZ(40px);
+	transform: translateZ(40px);/* translate in the Z-axis*/
 	color: black;
 	font-size: 50px;
 	border:1px solid white; 
@@ -229,35 +230,35 @@ ul.media .front, ul.media .back{
 }
 
 ul.media .back{
-	transform: rotateX(90deg) translateZ(42px);
-	backface-visibility: hidden;
+	transform: rotateX(90deg) /* rotate 90 deg in X-axis*/ translateZ(42px);/* translate in the Z-axis*/
+	backface-visibility: hidden;/*the backface visibility is hidden*/
 }
 
 a.facebook .front{
 	background: #3b5999; /*https://www.materialui.co/socialcolors 17th april */
 }
 a.instagram .front{
-	background: #e4405f; 
+	background: #e4405f;/* gives the background of the instagram*/ 
 }
 a.google-plus .front{
-	background: #dd4b39;
+	background: #dd4b39;/* gives the background of the google-plus*/
 }
 a.linkedin .front{
-	background: #0077B5; 
+	background: #0077B5; /* gives the background of the linkedin*/
 }
 a.github .front{
-	background: #bd2c00; 
+	background: #bd2c00; /* gives the background of the github*/
 }
 
 a.facebook .back, a.instagram .back, a.google-plus .back, a.linkedin .back, a.github .back{
-	background: white;
+	background: white;/* gives the background for the back of the media*/
 }
 
 .media a:hover{
-	transform: rotateX(-90deg);
+	transform: rotateX(-90deg);/*rotate in X-axis*/
 }
 .media a:hover{
-	backface-visibility: visible;
+	backface-visibility: visible;/*the backface is visible*/
 }
 
 /*Contact*/
